@@ -1,0 +1,50 @@
+.s-wrapper{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+.s-title{
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: orangered;
+    font-weight: bold;
+    font-family: 'lato';
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.s-para{
+    font-size: 17px;
+    font-family: 'lato';
+    color: gray;
+    width: 100%;
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: center;
+}
+
+.contact-details{
+    width: 100%;
+    padding-left: 4.5rem;
+
+}
+.mail,.phone{
+    margin-bottom: 10px;
+}
+.mail a,.phone a{
+    color: orangered;
+    text-decoration: none;
+}
+
+@media  screen and (max-width:500px) {
+    .s-para{
+        margin-top: 1rem;
+        font-size: 15px;
+        text-align: center;
+    }
+}

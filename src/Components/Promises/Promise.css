@@ -1,0 +1,113 @@
+.promise{
+    height: 37rem;
+    /* margin: 0 17rem; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-heading{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    font-family: 'lato';
+    font-size: 38px;
+    font-weight: bold;
+}
+.p-description{
+    margin-top: 18px;
+    width: 65%;
+    font-family: 'lato';
+    color: #000;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 6rem;
+}
+
+.p-sec-3{
+    height: 17em;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    transform: scale(0.95);
+}
+.p-left{
+    height: 100%;
+    width: calc(100% / 3);
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+}
+.p-middle{
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-middle img{
+    width: 86%;
+    height: 100%;
+    transform: scale(0.7);
+    box-shadow: 0 0 5px gray;
+    border-radius: 8px;
+}
+.p-right{
+    height: 100%;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+}
+
+.span-title{
+    color: #000;
+    font-size: 26px;
+    font-family: 'lato';
+}
+.span-para{
+    color: gray;
+    font-family: 'lato';
+    margin-bottom: 34px;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+@media screen and (max-width:800px){
+    .p-middle{
+        display: none;
+    }
+    .p-sec-3{
+        flex-direction: column;
+    }
+    .p-left,.p-right{
+        padding: 0 10rem;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .promise{
+        height: 57rem;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:575px){
+    .p-description{
+        font-size: 14.9px;
+        width: 90%;
+    }
+    .p-left,.p-right{
+        padding: 0 3px;
+        transform: scale(0.9);
+    }
+}

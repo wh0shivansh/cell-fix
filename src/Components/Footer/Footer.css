@@ -1,0 +1,138 @@
+.footer{
+    height: 15rem;
+    width: 100%;
+    /* border-radius: 8px; */
+    background-color: #131313;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-logo{
+    width:  40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.footer-logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.f-top{
+    padding: 20px 0 0 0;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: calc(100% - 2rem);
+}
+.f-bottom{
+    width: 100%;
+    height: 2rem;
+    color: gray;
+    display: flex;
+    background-color: #060606;
+    justify-content: center;
+    align-items: center;
+}
+.f-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-bottom span{
+    font-size: 12px;
+}
+
+.f-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.f-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    color: #feffff;
+}
+.f-logo span:nth-child(2){
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 8px;
+}
+.f-logo span:nth-child(3){
+    font-size: 1.6rem;
+    color: orangered;
+}
+.f-center ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.f-center ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'lato';
+    text-align: center;
+}
+
+.f-phone a,.f-mail a{
+    text-decoration: none;
+    font-size: 15px;
+    color: orangered;
+    font-family: 'lato';
+    font-size: 17px;
+
+}
+.f-right a>*{
+    box-shadow: 0 0 5px #66fcf1;
+    transform: scale(0.8);
+}
+.social-links{
+    color: #feffff;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.social-icons-footer svg{
+    color: #feffff;
+    filter: brightness(100%);
+    margin-right: 20px;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:436px){
+    .f-top{
+        flex-direction: column;
+    }
+    .footer{
+        height: 25rem;
+    }
+    .f-mail,.f-phone{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .f-phone{
+        display: none;
+    }
+    .f-right{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .f-left,.f-center,.f-right{
+        transform: scale(0.9);
+    }
+}

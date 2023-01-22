@@ -1,0 +1,45 @@
+.offers{
+    min-height: 30rem;
+    width: 100%;
+}
+.offer-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.offer-title p{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.3rem;
+    background-color: orangered;
+    border-radius: 4px;
+    font-family: 'oswald';
+    color: #1a1a1d;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    box-shadow: 2px 1px 3px #13131365;
+}
+
+.offer-cards{
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lato';
+    font-size: 18px;
+}
+
+
+@media  screen and (max-width:438px) {
+    .offer-title{
+        transform: scale(0.9);
+    }
+    .offer-cards{
+        transform: scale(0.9);
+    }
+}
